@@ -1,0 +1,70 @@
+.bicicletas-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicicletas-lista h2 {
+  margin-bottom: 40px;
+}
+
+.bicicletas-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  /* oq é overflow = usado para definir oq acontece caso aquele conteudo estoure o conteiner nesse caso teremos alguns muito usados como...
+  overflow: hidden; utilizado para esconder essa quebra
+  overflow: scroll; utilizado para deixar imagens no mobile scrollando para a lateral sem quebrar o elemento pai
+  overflow: auto; utilizado para colocar o scroll apenas quando necessário e ainda podemos ser mais especificos de onde coloca-lo 
+  utilizando overflow-x ou overflow-y*/
+  overflow: scroll;
+}
+
+.bicicletas-lista li {
+  flex: 1;
+  min-width: 280;
+}
+
+.bicicletas-lista a {
+  display: block;
+}
+
+.bicicletas-lista img {
+  margin-bottom: 16px;
+}
+
+.bicicletas-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicicletas-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-bottom: 60px;
+  }
+
+  .bicicletas-lista ul {
+    gap: 20px;
+  }
+}
