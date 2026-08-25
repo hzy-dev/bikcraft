@@ -1,34 +1,19 @@
+/* Global*/
 @import "./global/global.css";
-@import "./utilidades/tipografias.css";
-@import "./utilidades/cores.css";
+
 
 @import "./global/header.css";
 
-
-
-
 /* utilidades */
 @import "./utilidades/componentes.css";
-
+@import "./utilidades/tipografias.css";
+@import "./utilidades/cores.css";
 
 /* home */
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
-
-
-
+@import "./home/depoimento.css";
 
 /* Bicicletas */
 @import "./bicicletas/bicicletas-listas.css";
-
-
-
-
-
-
-
-
-
-
-
